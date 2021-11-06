@@ -10,6 +10,6 @@ r.irr   = [];
 np      = []; % in case want use different prior than those configured in tapas_config
 
 % run tapas
-[rstate,ritem,rcomb,LME] = tapas_binary_combined(r,options.perceptualmodel,options.obsmodel,np,0);
+[rstate,ritem,rcomb] = tapas_binary_combined_onestep(r,options.perceptualmodel,options.obsmodel,np,0);
 
 B = rcomb.belief; % State/Item combined belief
