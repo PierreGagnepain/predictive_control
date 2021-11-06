@@ -23,11 +23,11 @@ maxNumCompThreads(4);
 rng(idx)
 
 % set path
-rootpath        = '/netapp/vol6_u923/REMEMBER/remember_all/giovanni_leone/computational_model/'; % define you own !
+mainpath        = .../predictive_control/; % define you own !
+rootpath        = fullfile(mainpath,'simulation'); 
 resultpath      = fullfile(rootpath,'result_simulation');
 cd(rootpath)
-addpath(genpath(rootpath))
-addpath /netapp/vol6_u923/REMEMBER/remember_all/giovanni_leone/predictive_control/tapas_dependencies/ 
+addpath(genpath(mainpath))
 
 % ==========================================
 % SIMULATED DATA
