@@ -12,3 +12,4 @@ BIC  = 2*negLogLl +d*log(ndp);
 
 
 
+
